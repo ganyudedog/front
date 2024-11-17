@@ -17,6 +17,9 @@
 一般在网页中显示的图片都有其在网上的链接，只有使用其在网上的绝对路径
 同时网页里面的图片也只有使用其在网上的绝对路径
 才能在其他用户的设备上看到。
+
+img中的alt属性表示当图片显示不出来时出现的文字,title属性则表示鼠标悬停时显示的文字(a也有)。
+
 <br>为换行标签,为单标签。
 
 注意：从网上的绝对链接上导入图片时，尽量不要加回车从而使得方便！！！
@@ -174,7 +177,7 @@ html5新特性(相对于以前的不足新增部分,但兼容性方面有问题)
 1.required: required 必须填写
 2.placeholder: 文字 (提示文本,类似于搜索的提示文本)
 css更改placeholder: input::placeholder {修改} (重要!)
-使placeholder的文字移动也可以用padding挤开。
+使placeholder或者value中的东西移动也可以用padding挤开。
 3.autofocus: autofocus (自动获得鼠标焦点)
 4.autocomplete: off/on 可显示之前输入且提交成功的值且表单要有name(类似于浏览历史记录)
 默认为已打开。

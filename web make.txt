@@ -69,6 +69,21 @@ logo需进行SEO优化,所以:
 
 实际注册页面中,将表格先包含在一个父盒子里面,再使用表格包含列表来做,因为列表中的li排列整齐。
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">这句话表示让浏览器以最高的内核来渲染当前html页面。
+
+以下两句要使用条件注释,类似于c++。
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+上面这句话用于解决I9一下的浏览器对html5新增标签的不识别,使css不起作用的问题。
+
+<script src="https://oss.maxcdn.com/respond/1.4.2/repond.min.js"></script>
+上面这句用于解决IE9以下浏览器对css3媒体查询的不识别。
+
+正确使用方法:
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/repond.min.js"></script>
+<![endif]-->
+
 --------------------------------------------------------------------------
 
 以下为移动端。
