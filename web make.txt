@@ -50,6 +50,7 @@ logo需进行SEO优化,所以:
 2.直接font-size: 0;即可。
 最后还要给链接添加一个title属性,值为网站的名称。
 
+
 页面必须有三个标签来符合SEO的优化:title,desciption,keyword 。
 1.title
 具有不可替代性,是搜索引擎来了解网页入口和判断网页主题的最佳判断点。
@@ -65,11 +66,17 @@ logo需进行SEO优化,所以:
 最好限制为6-8个关键词,关键词之间用,隔开采用1,2的形式
 语法规范:<meta name="keyword" content="内容" />
 
+h1和图片的alt属性可以支持SEO优化。
+此外,<meta>中的robot,author也符合SEO优化。
+<meta>中的refresh,表示页面的刷新,content的内容则表示多久刷新一次(不需要单位,默认为s),还可以添加url属性,使得其能够在一定时间后自动跳转到另一个界面。
+
 对于注册页面,我们不需要对其进行SEO优化,因为注册页面比较隐私,且要保护用户信息。
 
 实际注册页面中,将表格先包含在一个父盒子里面,再使用表格包含列表来做,因为列表中的li排列整齐。
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">这句话表示让浏览器以最高的内核来渲染当前html页面。
+
+
 
 以下两句要使用条件注释,类似于c++。
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
