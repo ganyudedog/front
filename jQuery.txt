@@ -316,7 +316,7 @@ on() 多个事件注册
 on()可以给一个元素同时绑定多个事件
 语法规范: j对象.on(events, [selector], fn)
 events表示一个或多个用空格分隔的事件类型。
-selector表示元素的子元素选择器(字符串形式)。
+selector表示该元素的子元素选择器(即已经包含了该元素,字符串形式)。
 fn为事件处理程序。
 
 若相同则可以这样写, $("div").on("click mouseout", function() {})
@@ -342,8 +342,8 @@ one() 只会触发一次的事件
 语法与on一致。
 
 
-jQuery自动触发事件
-trigger() / triggerHandler() 自动触发事件
+jQuery手动触发事件
+trigger() / triggerHandler() 手动触发事件
 语法规范1: j对象.trigger("events")
 语法规范2: j对象.triggerHandler("events")
 第二种方法不会触发元素的默认行为(如表单的获得光标时的光标闪烁)!!!
