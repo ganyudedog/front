@@ -91,7 +91,7 @@ href="#"空链接相当于刷新,也可以直接返回顶部。
 <form></form>标签表示html中的表单域,其可以将其中的数据
 提交给服务器。
 在<form></form>中,有三个常见属性,action表示提交地址(网址的URL),
-method表示提交方式(get和post),name则用于命名表单域。
+method表示提交方式(get和post),name则用于命名表单域,而若要上传文件到服务器,还需要enctype属性,其值需为mutipart/form-data。
 这属于服务器的范畴了。
 
 <imput />(不止可以在<form></form>中使用)为单标签,表示输入表单元素,包含一个type属性,通过设置不同的type来
